@@ -7,6 +7,11 @@
 docker-compose up -d --build --force-recreate
 ```
 
+### 2. Truy cập
+```
+http:localhost:3001
+```
+
 ### 2. Để stop project
 ```
 docker-compose down
