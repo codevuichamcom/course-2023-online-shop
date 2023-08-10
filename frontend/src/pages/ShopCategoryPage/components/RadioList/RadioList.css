@@ -1,0 +1,10 @@
+.radio-list {
+  margin: 0;
+  padding: 0;
+}
+.radio-list li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  line-height: 32px;
+}

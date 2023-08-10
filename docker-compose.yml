@@ -1,0 +1,41 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: online_shop_db
+      MYSQL_USER: online_shop_user
+      MYSQL_PASSWORD: online_shop_password
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+
+  spring-app:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: spring-app-container
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - '8080:8080'
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/online_shop_db?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend-container
+    restart: always
+    ports:
+      - "3001:3001"
+
+volumes:
+  mysql-data:

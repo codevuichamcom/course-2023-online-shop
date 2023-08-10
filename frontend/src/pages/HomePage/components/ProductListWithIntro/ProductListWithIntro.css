@@ -1,0 +1,14 @@
+.product-list {
+  margin: 120px 0 70px 0;
+}
+.product-list .container {
+  max-width: 1140px;
+}
+
+.product-list__intro {
+  padding-bottom: 60px;
+}
+.product-list__intro__style {
+  border-bottom: 2px solid #384aeb;
+  padding-bottom: 8px;
+}

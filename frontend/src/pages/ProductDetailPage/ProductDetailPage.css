@@ -1,0 +1,91 @@
+.product-detail-page__product-area {
+  padding-top: 100px;
+}
+
+.product-detail-page__product-area__infor {
+  padding-top: 20px;
+}
+
+.product-detail-page__product-area__infor h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.product-detail-page__product-area__infor h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #384aeb;
+  margin-bottom: 10px;
+}
+
+.product-detail-page__product-area__infor p {
+  padding-top: 20px;
+  border-top: 1px dotted #eeeeee;
+  border-bottom: 1px dotted #eeeeee;
+  margin-top: 20px;
+  padding-bottom: 26px;
+  margin-bottom: 0;
+}
+.product-detail-page__product-area__infor__quantity {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.product-detail-page__product-area__infor__quantity label {
+  font-size: 14px;
+  color: #777;
+  font-weight: normal;
+  padding-right: 10px;
+}
+.product-detail-page__product-area__infor__quantity input {
+  width: 76px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.product-detail-page__product-area__infor__quantity button {
+  border: 1px solid #384aeb;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 12px 50px;
+  background: #384aeb;
+  color: #fff;
+  margin-left: 10px;
+}
+.product-detail-page__product-area__infor__favorite {
+  display: flex;
+  border-top: 1px dotted #eeeeee;
+  padding-top: 20px;
+}
+.product-detail-page__product-area__infor__favorite__icon {
+  margin-right: 10px;
+}
+
+.product-detail-page__description-area {
+  max-width: 900px;
+}
+.product-detail-page__description-area__tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f6f7;
+  padding: 10px 0px;
+}
+.product-detail-page__description-area__tabs li {
+  margin-left: 10px;
+}
+
+.product-detail-page__description-area__tabs li button {
+  border-radius: 30px;
+}
+
+.product-detail-page__description-area__contents {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 30px 30px 15px 30px;
+}

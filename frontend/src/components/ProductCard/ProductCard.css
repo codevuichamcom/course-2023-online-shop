@@ -1,0 +1,27 @@
+.product-card {
+  border: 0;
+  margin-bottom: 30px;
+}
+
+.product-card__container {
+  position: relative;
+}
+
+.product-card__overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card__container:hover .product-card__overlay {
+  opacity: 1;
+}

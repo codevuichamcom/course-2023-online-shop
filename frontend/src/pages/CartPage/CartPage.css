@@ -1,0 +1,19 @@
+.cart-area {
+  padding: 90px 20px;
+}
+
+.cart-area tr td,
+.cart-area tr th {
+  vertical-align: middle;
+}
+
+.cart-area__image {
+  width: 150px;
+}
+
+.cart-area__quantity {
+  width: 100px;
+}
+.cart-area__btn-checkout {
+  float: right;
+}

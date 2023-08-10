@@ -1,0 +1,12 @@
+.banner-path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 410px;
+  background-color: #f1f6f7;
+}
+
+.banner-path span {
+  text-transform: capitalize;
+  color: #777777;
+}

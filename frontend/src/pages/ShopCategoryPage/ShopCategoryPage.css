@@ -1,0 +1,69 @@
+.shop-category-page__container {
+  max-width: 1140px;
+  margin-top: 98px;
+}
+.shop-category-page__container .title {
+  line-height: 60px;
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.sidebar__header {
+  line-height: 50px;
+  background: #384aeb;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.sidebar__main {
+  padding: 20px 28px;
+  background: #f1f6f7;
+  border-bottom: 1px solid #eee;
+}
+.sidebar__main:last-child {
+  border: none;
+}
+
+.sidebar__title {
+  line-height: 60px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+  text-transform: capitalize;
+}
+.sidebar__range {
+  display: flex;
+}
+.sidebar__range__from,
+.sidebar__range__to {
+  display: inline-block;
+  outline: none;
+  width: 50%;
+}
+
+.filter-bar {
+  height: 58px;
+  padding: 0 20px;
+  background: #f1f6f7;
+  margin-bottom: 30px;
+}
+.filter-bar select {
+  min-width: 100px;
+}
+.filter-bar__sort select {
+  height: 38px;
+  margin-right: 10px;
+}
+.filter-bar__search {
+  max-width: 200px;
+}
+
+.shop-category-page_pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
