@@ -1,6 +1,5 @@
 package com.funnycode.onlineshop.controller;
 
-import com.funnycode.onlineshop.dto.CategoryDTOResponse;
 import com.funnycode.onlineshop.dto.PagingDTOResponse;
 import com.funnycode.onlineshop.dto.ProductDTOFilter;
 import com.funnycode.onlineshop.dto.ProductDTOResponse;

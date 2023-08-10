@@ -19,13 +19,10 @@ import com.funnycode.onlineshop.service.OrderService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.security.Principal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -71,7 +68,8 @@ public class OrderServiceImpl implements OrderService {
 
     private double calculateTotalPrice(List<OrderDetailDTOCreate> orderDetailDTOCreateList) {
         return orderDetailDTOCreateList.stream()
-                .mapToDouble(orderDetailDTOCreate -> orderDetailDTOCreate.getQuantity() * orderDetailDTOCreate.getProductPrice())
+                .mapToDouble(orderDetailDTOCreate -> orderDetailDTOCreate.getQuantity()
+                        * orderDetailDTOCreate.getProductPrice())
                 .sum();
     }
 

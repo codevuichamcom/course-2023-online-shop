@@ -8,20 +8,20 @@ import com.funnycode.onlineshop.dto.BrandDTOUpdate;
 public class BrandMapper {
     public static Brand toBrand(BrandDTOCreate brandDTOCreate) {
         return Brand.builder()
-                .branchName(brandDTOCreate.getBranchName())
+                .brandName(brandDTOCreate.getBranchName())
                 .build();
     }
 
     public static BrandDTOResponse toBrandDTOResponse(Brand brand) {
         return BrandDTOResponse.builder()
                 .id(brand.getId())
-                .branchName(brand.getBranchName())
+                .branchName(brand.getBrandName())
                 .build();
     }
 
     public static Brand toBrand(BrandDTOUpdate brandDTOUpdate) {
         return Brand.builder()
-                .branchName(brandDTOUpdate.getBranchName())
+                .brandName(brandDTOUpdate.getBranchName())
                 .build();
     }
 }
