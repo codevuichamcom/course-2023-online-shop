@@ -1,6 +1,7 @@
 package com.funnycode.onlineshop.controller;
 
 import com.funnycode.onlineshop.dto.PagingDTOResponse;
+import com.funnycode.onlineshop.dto.ProductDTOCreate;
 import com.funnycode.onlineshop.dto.ProductDTOFilter;
 import com.funnycode.onlineshop.dto.ProductDTOResponse;
 import com.funnycode.onlineshop.service.ProductService;
@@ -39,5 +40,10 @@ public class ProductController {
     @GetMapping("/{id}")
     public ProductDTOResponse getProductById(@PathVariable int id) {
         return productService.getProductById(id);
+    }
+
+    @PostMapping()
+    public ProductDTOResponse createProduct(@RequestBody ProductDTOCreate productDTOCreate){
+        return  productService.createProduct(productDTOCreate);
     }
 }
