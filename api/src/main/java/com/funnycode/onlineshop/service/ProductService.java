@@ -1,6 +1,7 @@
 package com.funnycode.onlineshop.service;
 
 import com.funnycode.onlineshop.dto.PagingDTOResponse;
+import com.funnycode.onlineshop.dto.ProductDTOCreate;
 import com.funnycode.onlineshop.dto.ProductDTOFilter;
 import com.funnycode.onlineshop.dto.ProductDTOResponse;
 
@@ -14,4 +15,6 @@ public interface ProductService {
     PagingDTOResponse searchProduct(ProductDTOFilter productDTOFilter);
 
     ProductDTOResponse getProductById(int id);
+
+    ProductDTOResponse createProduct(ProductDTOCreate productDTOCreate);
 }
